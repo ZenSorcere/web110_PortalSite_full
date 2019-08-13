@@ -1,0 +1,214 @@
+/*add to big.css CSS rules that float the <section> element to the left and floats your <aside> element to the 
+Right to create a (2) column layout for any viewport 601px or larger.
+
+Add to big.css @media query CSS rules for any viewport 600px or smaller that remove float rules and return the <section> and <aside> element widiths to 100%. 
+    if needed: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+*/
+
+
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    background-color: darkgray;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000; 
+    background: lightgreen;
+}
+
+h1 {
+    width: 80%;
+    font-weight: normal;
+    margin: auto;
+    background: lightsteelblue;
+    line-height: 2.5em;
+}
+
+main.wrapper {
+    background-color: lightsteelblue;
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    width:60%;
+    float:left;
+    min-height:200px;
+    padding-left: 1em;
+}
+
+aside {
+    width:30%;
+    float:right;
+    min-height:200px;
+    padding-left: 1em;
+}
+
+.fullwidth {
+    width:100%;
+}
+
+.formwidth {
+    width: 50%;
+}
+
+p {
+    margin: 1em; /* Top-Right-Bottom-Left = (TRBL) */
+}
+
+h2,h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    line-height: 1em;
+}
+
+li.h3 {
+    font-size: .9em; /* ol.h3 */
+    margin-bottom: 1.5em;
+}
+
+h4 {
+    font-weight: bold;
+    margin-left: 1em;
+    line-height:normal;
+    margin-bottom: 0;
+}
+
+p.h4 {
+    line-height: 1.25;
+    margin-left: 1.5em;
+    margin-top: 0em;
+}
+
+a {
+    color:darkcyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: lightseagreen;
+    text-decoration: none;
+}
+
+img {
+    border: 1px solid #000; /* width-style-color */
+}
+
+div.gallery {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin: .25%;
+}
+
+/* START - EMBED RESPONSIVLEY STYLES */
+.embed-container {
+position: relative; 
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+max-width: 100%; 
+}
+
+.embed-container iframe { 
+position: absolute; 
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/* Hide Agenda Calendar View in Larger Screen mode */
+.embed-container.agenda-view {
+    display: none;
+}
+
+/* END - EMBED RESPONSIVLEY STYLES */
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+/* RESPONSIVE - attempt to make width similar to Web110 Portal site.
+
+@media (max-width: 600px) {
+
+    
+   
+} 
+
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    } */
+
+
+/* PHONE */
+
+/* Swap Cal to Agenda view before 600 breakpoint because calendar too small */
+@media all and (max-width:1000px) {
+    
+    /* Show Agenda View Calendar */
+    .embed-container.agenda-view {
+        display:block;
+        height:100px;
+        overflow:scroll;
+    }
+
+    /* Hide Month View Calendar */
+    .embed-container.month-view {
+        display: none;
+    }
+}
+@media all and (max-width:600px) {
+    main.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+        line-height: 1.5em;
+    }
+    
+    h2,h3 {
+        font-weight: normal;
+        margin: 1em;
+        line-height: 1em;
+    }
+     section {
+        width: 95%;
+        padding-left: 1em;
+        padding-bottom: 2em;
+    }
+    
+    aside {
+        width: 100%;
+        padding-left: 1em;    
+    }
+    
+    .formwidth {
+    width: 90%;
+    }
+    
+}
+
+   

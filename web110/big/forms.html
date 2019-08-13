@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Mike Gilson: BIG Project</title>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://s3.amazonaws.com/menumaker/menumaker.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="css/big.css" />
+  <link rel="stylesheet" href="css/nav.css" />  
+ </head>
+ <body>
+     <header>
+     <h1>Mike Gilson: Web Development Examples and Resources</h1>
+     <nav class="topnav" id="cssmenu">
+  <ul>
+     <li><a href="../index.html"><i class="fa fa-fw fa-institution"></i> WEB110</a></li>
+     <li><a href="index.html" class="selected"><i class="fa fa-fw fa-home"></i> BIG</a></li>
+      <!-- Drop Down menu for Research Pages -->
+     <li><a href="#" class="active">Web Research</a>
+        <ul>
+           <li><a href="accessibility.html"><i class="fa fa-fw fa-globe"></i> Accessibility</a></li>
+           <li><a href="smo.html"><i class="fa fa-fw fa-thumbs-o-up"></i> SMO</a></li>
+           <li><a href="forms.html"><i class="a fa-fw fa-server"></i> Forms</a></li>
+        </ul>
+     </li>
+     <li><a href="gallery.html"><i class="fa fa-fw fa-camera-retro"></i> Gallery</a></li>
+      <!-- Drop Down menu for Google Pages -->
+     <li><a href="#">Google Tools</a>
+        <ul>
+           <li><a href="seo.html"><i class="fa fa-fw fa-desktop"></i> SEO</a></li>
+           <li><a href="calendar.html"><i class="fa fa-fw fa-calendar"></i> Calendar</a></li>
+           <li><a href="map.html"><i class="fa fa-fw fa-map-o"></i> Map</a></li>
+        </ul>
+     </li>
+     <li><a href="contact.php"><i class="a fa-fw fa-server"></i> Contact Mike</a></li>
+  </ul>
+    </nav>
+     </header>
+     
+   <main class="wrapper">
+       
+        <!-- START LEFT COL -->
+        <section>
+            <h2 class="subheader">Forms</h2>
+            <h3>WHAT ARE FORMS?</h3>
+                <p>Forms could be considered the life-blood of the internet.  While there are millions of pages out there and an infinite trove of information, without forms, all these pages would just be presentational, read-only silos of data, with no way of accessing them.</p>
+
+                <p>Forms are what allow the exchange of information to happen. Sending and receiving data of all kinds are done with Forms. Medical info, banking, online shopping, customer service, and even basic web searches all use forms to allow the conversation between the user and websites to actually happen.</p>
+
+            <h3>FORM STRUCTURE AND APPEARANCE</h3>
+                <p>The HTML structure of a form, at its most basic, is actually very simple. It is comprised of various widgets (text fields, buttons, checkboxes and the like), and attributes specifying what server to send the form data to (action), and if the server should return info (method). The basic elements used are:</p>
+                <ul>
+                    <li>&lt;form&gt;</li>
+                    <li>&lt;fieldset&gt;</li>
+                    <li>&lt;legend&gt;</li>
+                    <li>&lt;label&gt;</li>
+                    <li>&lt;input&gt;</li>
+                    <li>&lt;textarea&gt;</li>
+                    <li>&lt;button&gt;</li>
+                </ul>
+
+                <p>There are many ways to customize the look and style of the form. Though even today, it is still difficult to adjust styling on everything in a form with CSS.</p>
+
+            <h3>BEST UX PRACTICES FOR FORMS</h3>
+                <p>Forms won't do you any good if users don't fill them out. You want to make them easy and intuitive, minimize the amount of typing the user has to do, and easy to update before submitting. VerzDesign (Serrano) mentions a number of best practice elements to be aware of, a few of which are listed below:</p>
+
+            <h4>Maintain a single column layout:</h4>
+                    <p class="h4">Avoids confusion by giving clear next steps. The questions should be listed in a logical sequence, matching the flow of a conversation. </p>
+
+            <h4>Minimize input fields and reduce user typing effort:</h4>
+                    <p class="h4">Ask only for info you need. Asking too many questions can frustrate users. Save user's time with tick boxes, buttons, drop-down menus, etc.</p>
+
+            <h4>Labels should be above the input fields:</h4>
+                <p class="h4">A form should be easily skimmable, and having labels above each input allows users to quickly see what kind of how much information will be required.</p>
+
+            <h4>Differentiate optional and required fields:</h4>
+                <p class="h4">Try to avoid optional fields in your forms, and keep them limited if you do need them. Clearly indicate which fields are indeed required, so users will know the first time what will be needed to complete the form.</p>
+        </section>
+        <!-- END LEFT COL -->
+    
+        <!-- START RIGHT COL -->
+       <aside>
+            <h3>Citations</h3>
+           <ol>
+              <li class="h3">
+                Kant, Surya. <a href="https://www.c-sharpcorner.com/blogs/importance-of-form-tag-in-html-page" target="_blank" title="Form Tag in HTML"><cite>Importance of Form Tag in HTML Page</cite></a>. C# Corner, 17 June 2016.
+              </li>         
+              <li class="h3">
+                Serrano, Nicole. <a href="https://www.verzdesign.com/a-discussion-on-the-importance-of-the-good-contact-form-user-experience-on-your-website" target="_blank" title="Contact Form UX"><cite>The Importance of the good contact form UI on your website</cite></a>. Verz Design, 13 Dec. 2018.
+              </li>
+              <li class="h3">
+                Mozilla.org. <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form" target="_blank" title="Your First HTML Form"><cite>Your First HTML Form</cite></a>. 23 Mar. 2019.
+              </li>
+               <li class="h3">
+                Mozilla.org. <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form" target="_blank" title="Your First HTML Form"><cite>Your First HTML Form</cite></a>. MDN Web Docs, 30 July 2019.
+              </li>     
+            </ol>        
+       </aside>
+        <!-- END RIGHT COL -->
+
+
+       
+
+
+     <footer>
+      <p><small>&copy; 2019 by <a href="fp-contact.php">Mike Gilson</a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+    </footer>
+  </main>
+  
+     
+ </body>
+</html>
